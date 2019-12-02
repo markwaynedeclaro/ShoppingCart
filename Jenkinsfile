@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
+				echo '============================= Remove old Repo folder for ShoppingCart ============================='
                 dir ('C:/Program Files (x86)/Jenkins/workspace/ShoppingCartGit') {
                    deleteDir()
                 }
